@@ -1,8 +1,23 @@
 import React from 'react'
-
+import { Container } from 'react-bootstrap';
+import {Route,Routes} from "react-router-dom"
+import { Home } from './pages/Home';
+import { Store } from './pages/Store';
+import { About } from './pages/About';
+import { Navbar } from './components/Navbar';
  const App = () => {
   return (
-    <h1>App</h1>
+   <>
+   <Navbar/>
+   <Container className='mb-4'>
+     <Routes>
+      <Route path='/' element={<Home/>}></Route>
+      <Route path='/store' element={<Store/>}></Route>
+      <Route path='/about' element={<About/>}></Route>
+     </Routes>
+    </Container>
+   
+   </>
   )
 }
 
