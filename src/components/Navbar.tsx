@@ -40,7 +40,7 @@ export const Navbar = () => {
               transform: "translate(25%, 25%)",
             }}
           >
-            1
+            55
           </div>
         </Button>
       </Container>
